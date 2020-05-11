@@ -6,4 +6,8 @@
     <string name="afl_monitoring">AFL Monitoring</string>
     <string name="textview">TextView</string>
     <string name="don_t_have_an_account_register">Don\'t have an account Register</string>
+    <string name="type_password">Type Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login">Already have an account Login</string>
 </resources>

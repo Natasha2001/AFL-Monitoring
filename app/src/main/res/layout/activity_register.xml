@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/ivLogo"
@@ -44,7 +42,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/etPasw"
+        android:id="@+id/etType"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
@@ -52,41 +50,35 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/rectanglebg"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="@string/type_password"
         android:inputType="textPassword"
-        android:textAlignment="inherit"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rectanglebg"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/buttons"
-        android:text="@string/log_in"
+        android:text="@string/register"
         android:textColor="@android:color/white" />
-
-    <View
-        android:layout_width="70dp"
-        android:layout_height="2dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#808080" />
-
-    <TextView
-        android:id="@+id/tvForgot"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:gravity="center_horizontal"
-        android:text="@string/textview"
-        android:textColor="@android:color/holo_red_dark"
-        tools:text="Forgot password?"
-        android:focusable="true" />
 
     <View
         android:layout_width="match_parent"
@@ -96,13 +88,14 @@
         android:background="#808080" />
 
     <TextView
-        android:id="@+id/tvReg"
+        android:id="@+id/tvEnd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/don_t_have_an_account_register"
+        android:text="@string/already_have_an_account_login"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
+
 
 </LinearLayout>
