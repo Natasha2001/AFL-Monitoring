@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         //TextView textView = findViewById(R.id.tvReg);
 
-        String text = "Don't have an account Register";
+        String text = findViewById(tvReg);
 
         SpannableString ss = new SpannableString(text);
 
@@ -61,5 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvReg.setText(ss);
         tvReg.setMovementMethod(LinkMovementMethod.getInstance());
+
+
     }
 }
