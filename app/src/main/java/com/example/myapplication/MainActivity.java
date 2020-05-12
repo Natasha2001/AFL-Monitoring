@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.agricultureapp.R;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText etEmail,etPasw;
